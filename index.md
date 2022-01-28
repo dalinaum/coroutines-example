@@ -20,12 +20,14 @@ fun main() {
 }
 </div>
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+다음의 코루틴을 수행해봅시다.
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/dalinaum/coroutines-example/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+<div class="kotlin-playground" >
+fun main() = runBlocking { // this: CoroutineScope
+    launch { // launch a new coroutine and continue
+        delay(1000L) // non-blocking delay for 1 second (default time unit is ms)
+        println("World!") // print after delay
+    }
+    println("Hello") // main coroutine continues while a previous one is delayed
+}
+</div>
