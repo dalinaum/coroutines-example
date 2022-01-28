@@ -1,30 +1,24 @@
-## Welcome to GitHub Pages
+## 코루틴 예제 
 
-You can use the [editor on GitHub](https://github.com/dalinaum/coroutines-example/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+첫번째 코루틴 예제입니다.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<script src="https://unpkg.com/kotlin-playground@1"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  KotlinPlayground('.kotlin-playground');
+});
+</script>
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
+<div class="kotlin-playground" >
+fun main() {
+    val name = "stranger"        // Declare your first variable
+    println("Hi, $name!")        // ...and use it!
+    print("Current count:")
+    for (i in 0..10) {           // Loop over a range from 0 to 10
+        print(" $i")
+    }
+}
+</div>
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
